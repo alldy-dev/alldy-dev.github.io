@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#232A36"/>
+  <!-- ombros -->
+  <path d="M13 44 Q13 30.5 32 30.5 Q51 30.5 51 44 Z" fill="#4A90D9"/>
+  <!-- rosto -->
+  <circle cx="32" cy="20" r="9" fill="#F2B48C"/>
+  <!-- cabelo -->
+  <path d="M22.8 19 Q22 9 32 9 Q42 9 41.2 19 Q38.5 13.8 32 14.4 Q26 14 22.8 19 Z" fill="#1A1A1A"/>
+  <!-- notebook -->
+  <rect x="11" y="38" width="42" height="20" rx="4" fill="#DCEBF7" stroke="#232A36" stroke-width="2"/>
+  <!-- </> -->
+  <path d="M25.5 44 L21.5 48 L25.5 52 M38.5 44 L42.5 48 L38.5 52 M34 43 L30 53" fill="none" stroke="#F5B83D" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

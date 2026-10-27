@@ -1,0 +1,462 @@
+/*Make color variable*/
+:root {
+    --color-background: #0e1116;
+    --color-text: #6f737c;
+    --color-text-2nd: #d4d6da;
+    --color-yellow: #f7b63b;
+    --color-white: white;
+}
+
+/* Light theme */
+.light-theme {
+    --color-background: #f6f7f9;
+    --color-text: #5b6473;
+    --color-text-2nd: #15181e;
+    --color-yellow: #b07812;
+}
+
+.light-theme .moon-icon {
+    display: none;
+}
+
+.light-theme .sun-icon {
+    display: block;
+}
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: system-ui, sans-serif;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--color-text);
+}
+
+.logo {
+    font-family: monospace, sans-serif;
+    font-size: 1.125rem;
+    /* 18px */
+    color: var(--color-text-2nd);
+    text-decoration: none;
+}
+
+/*<header> --> <nav> --> <li>*/
+.header-link {
+    color: var(--color-text);
+    text-decoration: none;
+    transition: color 0.4s;
+}
+
+
+.naveg {
+    display: none;
+}
+
+.lang-button {
+    display: none;
+    /*hidden on mobile*/
+    background-color: transparent;
+    color: var(--color-text-2nd);
+    border: 1px solid var(--color-text);
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: monospace, sans-serif;
+    font-size: 0.875rem; /* 14px */
+    transition: border-color 0.4s;
+
+}
+
+.lang-button.active {
+    border-color: var(--color-yellow);
+    color: var(--color-yellow);
+}
+
+.sun-icon,
+.close-icon {
+    display: none;
+}
+
+.theme-button {
+    margin-left: auto;
+}
+
+.theme-button,
+.menu-button {
+    background-color: transparent;
+    color: var(--color-text-2nd);
+    border: 1px solid var(--color-text);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: border-color 0.4s;
+}
+
+/*---- Start Mobile menu open ----*/
+@media (max-width: 1023px) {
+    .menu-open {
+        flex-wrap: wrap;
+    }
+
+    .menu-open .naveg {
+        display: block;
+        width: 100%;
+        order: 1;
+    }
+
+    .menu-open .nav-ul-list {
+        list-style: none;
+    }
+
+    .menu-open .header-link {
+        display: block;
+        padding: 12px 0px;
+    }
+
+    .menu-open .lang-button {
+        display: block;
+        order: 2;
+    }
+
+    .menu-open .menu-icon {
+        display: none;
+    }
+
+    .menu-open .close-icon {
+        display: block;
+    }
+}
+
+/*---- End Mobile menu open ----*/
+
+
+/*---- Start Sections ----*/
+section {
+    padding: 48px 20px;
+}
+
+.section-title {
+    color: var(--color-text-2nd);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-greeting {
+    font-family: monospace, sans-serif;
+    color: var(--color-yellow);
+}
+
+.hero-name {
+    color: var(--color-text-2nd);
+    font-size: 2.5rem; /* 40px */
+    margin: 8px 0px;
+}
+
+.hero-role {
+    color: var(--color-text-2nd);
+}
+
+.hero-text {
+    margin: 16px 0px 24px;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.button {
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.button-primary {
+    background-color: var(--color-yellow);
+    color: var(--color-background);
+}
+
+.button-secondary {
+    border: 1px solid var(--color-text);
+    color: var(--color-text-2nd);
+}
+
+.hero-photo {
+    display: block;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 1px solid var(--color-yellow);
+    margin-top: 32px;
+}
+
+.about-text {
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.tech-group {
+    border: 1px solid var(--color-text);
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 12px;
+}
+
+.tech-group-title {
+    color: var(--color-text-2nd);
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+
+.tech-list { /*<ul>*/
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+}
+
+/* 04. Experience */
+.experience-list {
+    list-style: none;
+    border-left: 2px solid var(--color-text);
+    padding-left: 20px;
+}
+
+.experience-item {
+    margin-bottom: 28px;
+}
+
+.experience-date {
+    font-family: monospace, sans-serif;
+    font-size: 0.875rem;
+    color: var(--color-yellow);
+}
+
+.experience-role {
+    color: var(--color-text-2nd);
+    font-size: 1.125rem;
+    margin: 4px 0;
+}
+
+.experience-text {
+    line-height: 1.6;
+    margin-top: 4px;
+}
+
+/* 05. Projects */
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.project-card {
+    border: 1px solid var(--color-text);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.project-title {
+    color: var(--color-text-2nd);
+    font-size: 1.125rem;
+    margin-bottom: 8px;
+}
+
+.project-text{
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    margin-bottom: 16px;
+}
+
+.project-link {
+    color: var(--color-yellow);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.tech-list li,
+.project-tags li {
+    border: 1px solid var(--color-text);
+    border-radius: 8px;
+    padding: 4px 10px;
+    font-size: 0.875rem; /* 14px */
+}
+
+/* 06. Contact */
+.contact-text {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid var(--color-text);
+    border-radius: 12px;
+    padding: 16px 20px;
+    text-decoration: none;
+    color: var(--color-text-2nd);
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+
+
+.contact-name {
+    color: var(--color-text-2nd);
+    font-weight: 600;
+}
+
+.contact-handle {
+    font-size: 0.875rem; /* 14px */
+}
+
+/* Footer */ 
+.footer-class {
+    border-top: 1px solid var(--color-text);
+    padding: 32px 20px;
+    text-align: center;
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.6;
+}
+/*---- End Sections ----*/
+
+
+/*---- Start Hovers ----*/
+.header-link:hover {
+    color: var(--color-yellow);
+}
+
+.theme-button:hover,
+.menu-button:hover,
+.lang-button:hover {
+    border-color: var(--color-yellow);
+}
+
+.button-primary:hover {
+    opacity: 0.6;
+}
+
+.button-secondary:hover,
+.contact-card:hover {
+    border-color: var(--color-yellow);
+}
+
+.project-link:hover {
+    text-decoration: underline;
+    opacity: 0.7;
+}
+/*---- End Hovers ----*/
+
+
+/*For Desktop*/
+@media (min-width: 1024px) {
+    .naveg {
+        display: block;
+        margin-left: auto;
+    }
+
+    /*<ul> of <nav>*/
+    .nav-ul-list {
+        display: flex;
+        gap: 28px;
+        list-style: none;
+    }
+
+    .theme-button {
+        margin-left: 0;
+    }
+
+    .lang-button {
+        display: block;
+
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    section {
+        max-width: 1000px;
+        margin: auto;
+        padding: 40px 20px;
+    }
+
+    /* 01. Hero on desktop */
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 48px;
+    }
+
+    .hero-photo {
+        margin-top: 0;
+
+    }
+
+    /* 03. Technologies on desktop */
+    .tech-groups {
+        display: flex;
+        gap: 16px;
+    }
+
+    .tech-group {
+        flex: 1;
+        margin-bottom: 0; 
+    }
+
+    /* 05. Projects on desktop*/
+    .projects-list {
+        flex-direction: row;
+    }
+
+    .project-card {
+        flex: 1;
+    }
+
+    /* 06. Contact on desktop */
+    .contact-links {
+        flex-direction: row;
+    }
+
+    .contact-card {
+        flex: 1;
+    }
+}
