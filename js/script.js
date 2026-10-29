@@ -142,7 +142,7 @@ const translations = {
         'experience.text_01': 'Experiencias',
         'experience.text_02': '2026 - actualidad',
         'experience.text_03': 'Analista de Implementación',
-        'experience.text_04': 'Informes en SQL (Oracle) y dashboards web con HTML, CSS, Python y JavaScript para clientes de ERP',
+        'experience.text_04': 'Informes en SQL (Oracle) y dashboards web con HTML, CSS y JavaScript para clientes de ERP',
         'experience.text_05': 'Analista de Redes',
         'experience.text_06': 'Stefanini (cliente Vale)',
         'experience.text_07': 'Interfaces web, automacións en Python y dashboards no Grafana para herramientas de monitoreo.',
