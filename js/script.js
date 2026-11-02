@@ -59,11 +59,16 @@ themeButton.addEventListener('click', () => {
 const translations = {
     pt: {
         //Barra de navegação
+        'nav.presentation': 'Apresentação',
         'nav.about': 'Sobre',
         'nav.technology': 'Tecnologias',
         'nav.experience': 'Experiências',
         'nav.projects': 'Projetos',
         'nav.contact': 'Contato',
+
+        //aba Apresentação
+        'intro.title': 'Apresentação',
+        'intro.text': 'O vídeo vai aparecer aqui.',
 
         //Apresentando-me
         'hero.greeting': 'Olá, Eu sou',
@@ -113,11 +118,16 @@ const translations = {
     },
     es: {
         //Barra de navegación
+        'nav.presentation': 'Presentación',
         'nav.about': 'Sobre mí',
         'nav.technology': 'Tecnologías',
         'nav.experience': 'Experiencias',
         'nav.projects': 'Proyectos',
         'nav.contact': 'Contacto',
+
+        //Pestaña Presentación
+        'intro.title': 'Presentación',
+        'intro.text': 'El video aparecerá aquí.',
 
         //Presentarme
         'hero.greeting': 'Hola, yo soy',
@@ -167,11 +177,17 @@ const translations = {
     },
     en: {
         //Navegation bar
+        'nav.presentation': 'Introduction',
         'nav.about': 'About',
         'nav.technology': 'Technologies',
         'nav.experience': 'Experience',
         'nav.projects': 'Projects',
         'nav.contact': 'Contact',
+
+        //Introduction tab
+        //Introduction page
+        'intro.title': 'Introduction',
+        'intro.text': 'The video will appear here.',
 
         //Section hero, introduce
         'hero.greeting': 'Hello, I am',
@@ -241,7 +257,9 @@ langButtons.forEach((currentButton) => {
         currentButton.classList.add('active');
 
         //Change the CV link to the chosen language
-        cvLink.href = 'files_CVs/cv-allan-' + lang + '.pdf';
+        if (cvLink) {
+            cvLink.href = 'files_CVs/cv-allan-' + lang + '.pdf';
+        }
         
         //Translate every element with data-i18n
         const i18nElements = document.querySelectorAll('[data-i18n]');
