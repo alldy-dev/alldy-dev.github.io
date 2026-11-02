@@ -191,7 +191,7 @@ const translations = {
 
         //Section hero, introduce
         'hero.greeting': 'Hello, I am',
-        'hero.role': 'Developer · JavaScript, HTML, CSS and SQL',
+        'hero.role': 'Developer · JavaScript, HTML, CSS, Python and SQL',
         'hero.text': 'I build dashboards and web interfaces, turn datas into useful information',
         'hero.projects': 'View projects',
         'hero.cv': 'Download CV',
