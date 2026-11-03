@@ -234,7 +234,7 @@ const translations = {
         //Footer
         'footer.text_01': 'Made with HTML, CSS and vanilla JavaScript.',
         'footer.text_02': '© 2026 Allan Dymitri · Brazil'
-        
+
     }
 };
 
@@ -260,7 +260,12 @@ langButtons.forEach((currentButton) => {
         if (cvLink) {
             cvLink.href = 'files_CVs/cv-allan-' + lang + '.pdf';
         }
-        
+
+        //Change the presentation video to the chosen language (only on pages that have it)
+        if (videoFrame) {
+            videoFrame.src = 'https://www.youtube.com/embed/' + videos[lang];
+        }
+
         //Translate every element with data-i18n
         const i18nElements = document.querySelectorAll('[data-i18n]');
 
@@ -270,6 +275,14 @@ langButtons.forEach((currentButton) => {
         });
     });
 });
+
+//Presentation video: YouTube IDs for each language
+const videos = {
+    pt: 'dUWHdFi4cY0',
+    es: '3EprLMLIyHk',
+    en: 'o3ljvvkEEDA'
+};
+const videoFrame = document.querySelector('.intro-video');
 
 //Load the saved language
 const savedLanguage = localStorage.getItem('language');
