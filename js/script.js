@@ -105,8 +105,8 @@ const translations = {
         'projects.text_02': 'Portfólio pessoal',
         'projects.text_03': 'Este site. Feito com HTML, CSS e JavaScript puros, responsivo e com menu mobile.',
         'projects.text_04': 'Ver código',
-        'projects.text_05': 'Em breve',
-        'projects.text_06': 'Novos projetos em desenvolvimento.',
+        'projects.text_05': 'Busca de endereços com API',
+        'projects.text_06': 'Consome a API ViaCEP para buscar o endereço pelo CEP ou pela UF, cidade e rua, com fetch, JSON e tratamento de erros.',
 
         //Contatos
         'contact.text_01': 'Contato',
@@ -164,8 +164,8 @@ const translations = {
         'projects.text_02': 'Portafolio personal',
         'projects.text_03': 'Este sitio web. Hecho con HTML, CSS y JavaScript puros, responsivo y con menú móvil',
         'projects.text_04': 'Ver código',
-        'projects.text_05': 'Próximamente',
-        'projects.text_06': 'Nuevos proyectos en desarrollo',
+        'projects.text_05': 'Búsqueda de direcciones con API',
+        'projects.text_06': 'Consume la API ViaCEP para buscar la dirección por código postal o por estado, ciudad y calle, con fetch, JSON y manejo de errores.',
 
         //Contactos
         'contact.text_01': 'Contacto',
@@ -224,8 +224,8 @@ const translations = {
         'projects.text_02': 'Personal Portfolio',
         'projects.text_03': 'This website was built with HTML, CSS and vanilla JavaScript. Is responsive and with a mobile menu',
         'projects.text_04': 'View code',
-        'projects.text_05': 'Coming soon',
-        'projects.text_06': 'New projects in development',
+        'projects.text_05': 'Address Search with API',
+        'projects.text_06': 'Uses the ViaCEP API to find addresses by ZIP code or by state, city and street, with fetch, JSON and error handling.',
 
         //Contacts
         'contact.text_01': 'Contacts',
